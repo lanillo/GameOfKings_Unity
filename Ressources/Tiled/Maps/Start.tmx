@@ -1,8 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="2017.05.16" orientation="orthogonal" renderorder="right-down" width="80" height="45" tilewidth="32" tileheight="32" nextobjectid="1">
- <layer name="Tile Layer 1" width="80" height="45">
+ <tileset firstgid="1" source="../Tilesets/castle_lightsources.tsx"/>
+ <tileset firstgid="21" source="../Tilesets/castle_outside.tsx"/>
+ <tileset firstgid="208" source="../Tilesets/castlefloors.tsx"/>
+ <tileset firstgid="308" source="../Tilesets/castlefloors_outside.tsx"/>
+ <tileset firstgid="328" source="../Tilesets/castlewalls.tsx"/>
+ <tileset firstgid="508" source="../Tilesets/cement.tsx"/>
+ <tileset firstgid="526" source="../Tilesets/cementstair.tsx"/>
+ <tileset firstgid="546" source="../Tilesets/chests.tsx"/>
+ <tileset firstgid="552" source="../Tilesets/country.tsx"/>
+ <tileset firstgid="572" source="../Tilesets/cup.tsx"/>
+ <tileset firstgid="574" name="dirt" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Images/LPC Base Assets/tiles/dirt.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="Dirt" tile="10"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="592" source="../Tilesets/dirt2.tsx"/>
+ <tileset firstgid="610" source="../Tilesets/dungeon.tsx"/>
+ <tileset firstgid="714" source="../Tilesets/grass.tsx"/>
+ <tileset firstgid="732" source="../Tilesets/grassalt.tsx"/>
+ <tileset firstgid="750" source="../Tilesets/hole.tsx"/>
+ <tileset firstgid="768" source="../Tilesets/holek.tsx"/>
+ <tileset firstgid="786" source="../Tilesets/holemid.tsx"/>
+ <tileset firstgid="804" source="../Tilesets/house.tsx"/>
+ <tileset firstgid="867" source="../Tilesets/inside.tsx"/>
+ <tileset firstgid="967" source="../Tilesets/kitchen.tsx"/>
+ <tileset firstgid="975" source="../Tilesets/lava.tsx"/>
+ <tileset firstgid="993" source="../Tilesets/lavarock.tsx"/>
+ <tileset firstgid="1011" source="../Tilesets/mountains.tsx"/>
+ <tileset firstgid="1119" source="../Tilesets/rock.tsx"/>
+ <tileset firstgid="1121" source="../Tilesets/signs.tsx"/>
+ <tileset firstgid="1127" source="../Tilesets/stairs.tsx"/>
+ <tileset firstgid="1239" source="../Tilesets/treetop.tsx"/>
+ <tileset firstgid="1281" source="../Tilesets/trunk.tsx"/>
+ <tileset firstgid="1299" source="../Tilesets/victoria.tsx"/>
+ <tileset firstgid="1354" source="../Tilesets/water.tsx"/>
+ <tileset firstgid="1372" source="../Tilesets/waterfall.tsx"/>
+ <tileset firstgid="1387" source="../Tilesets/watergrass.tsx"/>
+ <tileset firstgid="1405" source="../Tilesets/barrel.tsx"/>
+ <tileset firstgid="1413" source="../Tilesets/brackish.tsx"/>
+ <tileset firstgid="1431" source="../Tilesets/bridges.tsx"/>
+ <tileset firstgid="1473" source="../Tilesets/buckets.tsx"/>
+ <tileset firstgid="1479" source="../Tilesets/cabinets.tsx"/>
+ <tileset firstgid="1557" source="../Tilesets/Artis_dock.tsx"/>
+ <tileset firstgid="1685" source="../Tilesets/ship.tsx"/>
+ <tileset firstgid="1941" source="../Tilesets/PathAndObjects.tsx"/>
+ <tileset firstgid="2197" source="../Tilesets/plantrepack.tsx"/>
+ <layer name="Grass" width="80" height="45">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+   eJzt0LEJACAQBMFH7NOmvyCxAyMPYYLJl+1R1QAAAAAAAAAAAAAAl9bMN/zqvPPPu9S/dAMA8N4GDVW/VA==
+  </data>
+ </layer>
+ <layer name="Details" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztmQluqzAYhCvEPeHahss8WarV6Zfxxpr0MRKiSYw9Hv8r/fp68ODBgwcPHlyFdaiPCUPbuL1YvteJ14IrfN+vQhAuQTgFuUq80ne6nxYknResG+/T6J9ZMH9unPJx+zrqjPUceVG/1aw7j7/HJn4tCNhbem7NzBEMJ9XD8S+BuvZiwZ6DzBfPNWqj2qk2ynkrVDfaVeLnOK/gqnbrPnMdx3mLTS7DKx+eKf3pyNgW55rHH/7UkGtNo7dBHe/4h+HVTnVNHbtg3w6RM8fO448vurkinI3sReJC33P5gf5Y22eE06aUXxbMOZv4qjFXzyOtM42/fVp/PwO6F7VD6qbnqDoEaEN/WodX/2RM59gEp1+ys9xeGAvT2FKu2wvmDtWPdul8sYTIO/m+wtkl4fSLYK2kNk1OzJNnQM+NvqU2wpxGW5skDi14LmnB2HR0TFLbY/xorU22IldLpPXn8bet1moul9NrMfNonHFGNbAmTDzUrhhrPgml+EkwD/WCel1pO2chZ49ub7kc+SlQzi5eaL2SoJ9d/ZL0Y06mrrS93tx5N1xt6npazQ8pX/E3jYMp17n13PoRrrZr6VPfEQF7iHB5vVQjse7ld249Ptva6++F+oA799z6ypu1COFqMGqY60/Xgn7OZhkT99pirYfTu3tWf2OPnXs2xb2IXG5T7afxNY6lv5fCOk5b6qWxtrdW0vhA/lzbxQ/awWr2wn6RfUdNP9ebuP49l3/dXX9nvurJLbm8pxwn07PSB3J22Hqe1HMeX7Umb9pUKf65Makv1bxWm8vN7eyO7wX4jKsLuDbPlXlhxRysU1v0b4ldjKd8F6L8NE63QmuFefSaKtizpPhETWs1exj69doK8k0gX57jVf0qdWqxG8bDs7Rz/Jw2WqurTSW+Z9Y5rMecFgG8+M7ibDheLv5FkF/Nl84G4x7z3pVo7eGo1139CuuVo3j05vjSHDncdcYKvivoQSkush9x+2xZr/Yu+O53Da7+bUGvbTgNevMSfeRu29sCV6flwLpnTx7X2u+Tddv63DLsj4efir2+sqX3/ys4Ij7/r9q14J18kv0me8+7eZLfmTUr32k4LovR6a7cUluX/d2VZ+n6s7ttKaK3HrjqfUcO7/Q/pXc4vx6on97dczx48BfxD+AX1RQ=
+  </data>
+ </layer>
+ <layer name="PathDirt" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztmO0OgjAMRQmJz4VBFJ2+p68pRkhKbUfHNmXknqQ//Iru5HabrSoAAAAAgLx0dVWdx7rU//415dEPzq5j3eAvGDc4O8JfFH1Gf779odvJvpHaH3V2IvtDS56nr7UFO+zIOlL4486sRd2W5DL1+UGdNEPdhXoePjU9PiouS/DYKxlYmwXq6WH8rPN43ILDTvAi7U9LfSVVyvVJHn+VxRhHUq/xLFj9psAJ358zi/QMsPrhxXvNLbxf85uK2Cz68uTLl+bJuheFro9XakKyqN2bLNVk8rQFtCy+HfqcLfVcznxtEZ7FVsnZnrMUi9TPPGvw5kdyiNlHGFIvl/KfZSv8+p64R3xnM7Aj9TMchgGH8cBhPNwh7jbhUIfI4DqWZsO4L+pYZnrobRmrO/ibM82yQmbJmDV84JlrlDkNMveN5O6dK21GjszN6QV3wI5DtgAAAAAQwQuupIKf
+  </data>
+ </layer>
+ <layer name="CastleRoad" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt1D0KgDAMBtDq4Km8/7nEIYPgoo2klvfgW0N+SlvLty9jJmzrNRk1M/T28nViX5n3rnA3Q0+tJzlVzT2LyrczC/t7L/5pAAAAAAAAAAAAAACAPzgALtcbWQ==
+  </data>
+ </layer>
+ <layer name="Water" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztmttuwjAMhnvRPt0QUNJRLibR93+KNVo9LOMcnPQwaf8vWVzhhM+HHEjT5Ml1TTMk7Gu2zy7T4T9TDr+P2R7gp+o+czlFuI1gl5TMQXCzyaFWq+TArljXmddl4Yc11ibODvxskuxQuzZhzagT7fvArlwOPa9K4FcuWj/Azy6+9p5nu4GhSfK8ixy06b7cD5yQg1VyyMFi8R6IPaBdyL064c6qTg65VyXwqxP41Qn86gR+cfWRMwX+80iLzmWSo7y3x9lN1yAY9YvxMwfOvy9dGaNe3K9o5uvWIQ9/uV0URvQOg9+1hPiF6n3v3xGytecU4zZ07+9X5Duhc+S7e+ei7MlbzYnHSI5HuUaMNKXeWkm+WzNM5cAaDGPM5FspHkfS1L4+vWkM6Q5By9GtGObkXKhv147B+xpxk3xlz3i2P+alcQrFyMow1Mekj5x3myU5mFOjnhnlVSyOciz6jsZwqzlrMbopuW5lyGNiqVGvZ4Cd7GHaWFxWhpqfVI1o/slXSf2W+OE1H2LNe9iYEf8ShtKPNgfeV8j/2IX3UXtYrD9xdrxGc/15lqleFMslrT64pqXvTu07zyNYhmJtPX9wljl7L4qdxpL6I5+DPHNra0pt/ZbEWuabdQ+1Ri1o/V/GIVUzW+dSbMw956aZ78ehveTeRrmUswf4K3Z0/LS5HD0PGGxN+wZduo8h
+  </data>
+ </layer>
+ <layer name="Waterfall" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0LERABAQAMFPdIkM/XdAIBMQCHdnroGLeJNTRLlUd5za+tIvDe8AAAAAAAAAAAAAAAAA+GQCWyoIZg==
+  </data>
+ </layer>
+ <layer name="TreeTrunksInsideCastle" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0rEJACAQBMFLHuy/YmPhA3lDZ0pYNjlVhQdLv5HuOy/e677zIgAAAAAAAAAAAAAAAPxtA7nIAEY=
+  </data>
+ </layer>
+ <layer name="TreeTopsInsideCastle" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0KERwCAUBcEn6L9DEgH0ke8SFcEgd2eugUteoyWzWlWvrupuYcP3Jf+GRwAAAAAAAAAAAAAAAADHPX+ZCP4=
+  </data>
+ </layer>
+ <layer name="TreeTopsInFrontInsideCastle" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0DENgEAABMEr8G+PpwAKHh+cBQjlTLIGNknWJRlta7y399vRTv8+ufpttts/AAAAAAAAAAAAAAAAgN884wAH8w==
+  </data>
+ </layer>
+ <layer name="CastleWalls" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt1D0KAjEQhuHkjh5gT+BZ1G39af1pXQXPINgKtoKt4AX8AlMEC3eKiFl4H3hBBsIwIobQbxRDaNVUzexzmg3Nv+5otGP8UTPA7+8Xd0xif2nHWZ2si808b2uq1B3573fuKO24ZntvNvO8ralSdyzUUq3U2lHacc/2PmzmeVtTpe7YqK3aqb2jtOOZ7X3ZzPO2pkrd0amDOsYy/8sAAAAAAAAAAAAAAAAAAAAAAADfvAEsmtf7
+  </data>
+ </layer>
+ <layer name="CastleLights" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt090JwkAMAODWH1AfdP9nF3AUB3AAB3AA+9iWO0x6FUG+DwJHuEuOQLoOfms7Ot/7cj7ydn4/Uivbu7VHTcsMDqPzoy/nI2/n9yO1sr1be9S0zGDs2X++861aS3qv+d9MzeumnH+t+J9srSW91/xvpuatMj8o2Q2xT+SZOg5xSuSZOg9xSeSJsb8xtTnZ35janOxvjDkBAAAAAAAAAADwT94plBR8
+  </data>
+ </layer>
+ <layer name="Bridge" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0CEOwCAURMFvuL+HioIgHLMVCGxVSzOTrN+8CAAAAP4gp4gyd6S33+znvJvVuabfY31pNvQDAAAAAAAAAACAT7gAUOAGcQ==
+  </data>
+ </layer>
+ <layer name="BelowDocksBridge" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztziEBAAAIA7Ar6tC/HQVQGMyWYAkAAAAAAAAAAAAAwK7rewAAAFwNqmgANg==
+  </data>
+ </layer>
+ <layer name="Docks" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0LEJhFAURNEf2YkLFqCyBahYwC5Yg/Yf+4IfiJFioMI5cPNhUgIAAAAAAAAAAADgScoipc+mqrh70bvU8VcTtbmv/07p4q8+GnJjjmN+8dV/0+S7U5bdX7P/AAAuWQEH1QaP
+  </data>
+ </layer>
+ <layer name="Ship" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt070KQXEcxvH/4nADcgVyBbJacE1ebsDLjsLoLYxEGRmQjYHZZDZZPIriRP1ZpPP91NPpNyh9O8cYAAAAAAAAAAAAAAAAAABgI+E38eSLpbRf/7d/EFWnvmOMezH6WQm/6RfxYL90wJiMltVyAbvfBNWppl71hzW0kAf75dWsoBW1kmU/nzr1nOd3cKDb78F+3zip1UrN1g+73meHfjYOt3dvqud91/tIPysbddq6vt+d7j39rMzUae7qt9C9pJ+1oVqNbg3Hek5o95GmerW0ttbRuvT7WFnNKlqVdvCoC/OuP7g=
+  </data>
+ </layer>
+ <layer name="BackShip" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENACAMBLHvshE1FfuPxAwUUYRkT3C6BAAAAAAAAAAAAHh1Knu64WfLPwAAAGh3AQLxAQs=
+  </data>
+ </layer>
+ <layer name="DecorationsDocks" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt2DEOwiAYhuE/TWqZPYAOxlXj4uwB9AZ6T1eN3sEjeARHS5pGJAyktVDwfRLSDk0hXyg/VAQAAAAAAAAAAABADHslclCxR5GuY53dySM/cvbnyso3Z5BV6h6T2CNIy0Z9X59/mN9UfZqPWf3c3Mot1/yGqL2r+n1rI7dl0TTNzu9SilzL3/YfUuh64pp/94Tzsw29F8zt+7W55qO5nnW1rWSnm86vvbefWRT9+hgrcz3r65X5/BuaqmKPIA23jGoC8sG/nu70Xrmt73zf3Zypv72kfFYbg5zOagDCegNXVBxw
+  </data>
+ </layer>
+ <layer name="ShipsMats" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt06ENACAUQ8EqhuOz/zxgGAAMCblL6mteAgAAAAAAAAAAd3pLam2010+AE7vd0jAAAADA1yZaFwKJ
+  </data>
+ </layer>
+ <layer name="Barrels" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt1U0OgjAQQOFuSObS4g8cSg+gB8AD6FGYDcmAtBVKQkrft5ukC/s6QecAAEDIXZx7iH9G2FNbvcQ/I6zTVm/xzwj7aKuv+GcAAAAAAAAAwK9TtfcvyNs10o++aWJ9j6zk3bF3X9uh5N2xdy+5w5yz9rjQZKRe0KPRs+3k/L9N7bkjvcMt8R5D09g72PZz72Dl+v+xZBenUt/ByvW7uWUDbC9lv8F+AwAArNED398gAQ==
+  </data>
+ </layer>
+ <layer name="TreeTrunks" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztmE1OAzEMhWdTEYmrwQ3oPaGs+VlT9rDoQRokRrKseMaOm8Sdvm+XmXjivNiO22kCAAAAQAR2u752vXhO0/SS5HEtfN/JoAO1vVfYjdT4LWv1nuRxLRa9OJJmkk4ajVvxlbU6JnkciZE6SfxkrX6TPAbbZa3uRb97RmC5WyLm+2igSTu2mq+99rXV2PT0guB28eSd1faQe87X4H2n1ce1vFvSiNpqtPzIfn0G1O8h+/T47xf3kb774/tO981ZD21dq6l/PeNxaa2n/HyfynPnd1ZfNfHE51jzmZ/1JfXk35Jiv7Rmaa41dzTxxOd47+Da/NZqsLQmz9MZ6TnF27tp7bW1wwrVSrPfki88h9eeU7RxI+kUqfej+605L2pD47r27KlmHp00tc0bn5e+j2rqiec/eYsvJ0ErjwY9+qO1WtUrFyWdShpE6rupPtpa24KSTnNManuPlmhqieZuGUHUGJTulmtg5G8/T3/Zk5KfrXpGCxG1KnEtfgIAAAAAAAAAAEDHGd/vZI8=
+  </data>
+ </layer>
+ <layer name="TreeTops" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt2E1uwjAQBWBLBMnc/zLlAHTbv0VBgqQSZUG7b1nyNpWi4JlmYic4yfukWdhWMB4Gx4lzREQU471wbovYFff+JsNKte4Dri8RlfI5U8xxm3VL6vk4Ij4Rp0LOk2WuJ+/cM+LF28aGVl+3lZQPqd8y1x65OSDKQI60sTGR8hHzm/w5IzdfiO9AjrQxrTYf0Lf2cjtXXfa9H6zrF3EJrE8b02pzg75HL7dz9d++F8rvYuVcgViubuupPtak1eYr+t683M6JdG8J0fJr3eu02qzQ9+Hldk4s91otv1o9hWi12beU5zMtJ5Z5tHrKTcxZsK957llPVinOHTnN01bM/26Kz1RWXc4HoWvnmsuY80H92qH2v7Fpu9/kti/RfMx177NK8W5uzlK8m5u6Zo1ZnuXptsb437Rp1hhrjoiIiIiIiIiIiIhoXK7i+Mgy
+  </data>
+ </layer>
+ <layer name="FrontTreeTops" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt2DEKwkAQBdAtUuz9T6MH0ANooRaagHoPRyyEwIaQKBL3PZhiuvAZ2PBTAuDp0KR0jDk1v/6SZTpHbpeYVn6TXCO3W8xdfgB/Y5VTWufyzrBNZLXN5Z1hu8hqn8s7w9rIqsvlHYAXXco8Y7qUfsYyfxvTpfQzrrW/mno3/Yxr7a9qvZtPqfVuYGn8Y8zjrZjHWwEAAAAA8H0POWE87Q==
   </data>
  </layer>
 </map>

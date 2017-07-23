@@ -1,14 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "King's Conquest", "Assembly-CSharp.csproj", "{0423E153-BDB9-0116-A191-0A87831F7186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "King's Conquest", "Assembly-CSharp-Editor.csproj", "{EDEFDD14-2A46-95F4-766A-1C8144F1C16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{0423E153-BDB9-0116-A191-0A87831F7186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0423E153-BDB9-0116-A191-0A87831F7186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0423E153-BDB9-0116-A191-0A87831F7186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0423E153-BDB9-0116-A191-0A87831F7186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDEFDD14-2A46-95F4-766A-1C8144F1C16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDEFDD14-2A46-95F4-766A-1C8144F1C16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDEFDD14-2A46-95F4-766A-1C8144F1C16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDEFDD14-2A46-95F4-766A-1C8144F1C16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

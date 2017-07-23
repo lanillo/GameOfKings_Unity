@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="2017.05.16" orientation="orthogonal" renderorder="right-down" width="80" height="45" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" source="../Tilesets/castlefloors_outside.tsx"/>
+ <layer name="Floor" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6H7Zv+Fu0dRcNVUVVVVVVVVVVVVVVVV1VcPmAd+kQ==
+  </data>
+ </layer>
+</map>

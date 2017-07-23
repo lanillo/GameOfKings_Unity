@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="2017.05.16" orientation="orthogonal" renderorder="right-down" width="80" height="45" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" source="../Tilesets/castlefloors_outside.tsx"/>
+ <tileset firstgid="21" name="dirt" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../Images/LPC Base Assets/tiles/dirt.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="DirtPath" tile="4"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="39" source="../Tilesets/grassalt.tsx"/>
+ <tileset firstgid="57" source="../Tilesets/castle_outside.tsx"/>
+ <tileset firstgid="244" source="../Tilesets/castlewalls.tsx"/>
+ <tileset firstgid="424" source="../Tilesets/house.tsx"/>
+ <tileset firstgid="487" source="../Tilesets/water.tsx"/>
+ <tileset firstgid="505" source="../Tilesets/PathAndObjects.tsx"/>
+ <tileset firstgid="761" source="../Tilesets/barrel.tsx"/>
+ <tileset firstgid="769" source="../Tilesets/buckets.tsx"/>
+ <layer name="Grass" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKGr9P3LrcdQcNVUVVVVVVVVVVVVVVVV1VcP7HOxLw==
+  </data>
+ </layer>
+ <layer name="DirtPath" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzlW4tOBDEI3K/Q3OlpT///H90mR0IQ+mJo6zkJMdm4LJ3SdsB6HDi8nXY97fNhKfg9iQ/m43LabdDPCkgOXk77bnyXj7vnPYn7aa+Hfx5mw8Mdf9fDHYFz2JODOY73h92M55p54eEug+deAsQjfdY4JH6u4p135blmJZS4vx1+7jJorIjcI8h1LDnk46rxw8f2xYz8W5DcSLscfu4yiL808G4JGocWZ5IbzeTY7o/nGrS8krzL74/mDvEXcV7SGLWY+bhQeU/ga0r6l/PqzZ2I/U9Cixm5X2jfK80LUidwXx4/Pd/ZQR8ixx21B0rsxCHfI5PT1yz+MnbQ2Kh6S/ry+OnBqMZGAVVvSV/JHdn+3+XfRpxhEfrZgqWbuTackYtIzTZr76vVAxqXUXwi+0TR/Gn1rVZvWBqb+ETyiNQBUfWHxltpnyDNa/GJjg+lAyJ6ntpa7a3VtNovksNR32hNa9XuqJ4sej0jdICVy1r/rNbLQ/SEavFxHr1A6SiZy1ZvztIaUdxp8XHzANl7L+mL7FuL3erpRWhJKz7rd0s9fy3mNBhTS08zc8HPR0trRHBX0z8a+JpsNak7a/uVNZ8t+73VF43grlX/aPHVrJQHNV6t+ewZf2Q/Cn2Oa5Dx1/r8EetN5iKCw+iziMPSgK05jIoLpcNnckfY4d4EIg9XcJexQ0+XIOeytVZYxR1hdU+Xx9Fbt67mjrCypyvRWrfuwl3GLjlIKNWtFBvybxEI7JSDGZbWljX2Dtxl7JaDhFL9twt3hB30DIes52VNlpZFpqNUV7X2Jjz6t1QrWjUmsu5rGV/pTmD+aZ1/rfftrLq5pydk9Sa0NZwA3GWM9F74mK+NXFl37lrr5pa6ulQrynMluVj77dfTc2kZT+luV0vdjKqrZ969yRgd307nG8ds/p4JK+4uPRN20/p/Cej/O/lvmHnv6xmBOjd+AI6Jfvs=
+  </data>
+ </layer>
+ <layer name="Water" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztmdsOgjAQBeH/f1QjaBF9F2IqtW6l7eGtM8n+wOTsbi9T33XTQXVfqjWOcnda6ok/3BWiens07G4FbxrsCQ1mnUapv8tSN/x9qOlfHG5wVtbAn0Z4HonrzA7Zxc+za1B+tjmyt4uVMb8fZiODZO+bOdGvPpMDuzcbK2/073/GaOblOCSDG85wktobOPxlMJzk9jEObSfW3mAW2tTePzjLvFH8tZ69ldR9LXWnC6v17MWEe4NslTMGewN/5Thmm4Tr2au10Lt1+PvvQO9WEd8z6N0yOBNr4E8Dfxr40+BNT4N3FQ3elTV429PAnwb+NPCngT8N/GnwL6mBO40XuwzJnQ==
+  </data>
+ </layer>
+ <layer name="Bridges" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0NsNgDAQA8FT+m+OVwEhoQ/cBSBmpP23XAUAAADAGyytak1b2tPRnl70LT1/nWmkmS7/AQAAAAAAAAAAP3cDmuUIow==
+  </data>
+ </layer>
+ <layer name="CastlePath" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer name="VillageBuildings" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt1l1OwkAUhuFaFd2A4gYA16k70GjYCMoGUC658v/a/2sw0US/Bi6aw7R0QixT+j7Jl2lIkx5OJmcmigAAAAAAQOI+jqIH5VF5iqe/bW2utqYqeVPP3pUP5ZP+AZXjmoEozjUDAYTLzjxmoB8781wzcIN7YKYL9ehS6eesodpWbQ1lR9ldUZ1X+u61MsxZQ7Wn2vaVpnKgfCs/Jdd7o+/dKnc5a6haqq2tdJRD5TepteRZ86xvviivcfYzso3Vn4nyFWc/V0kIM7HK7Ezs1byHvvvJzsRBzftn9xP82P2USN9Z4S99Z4W/9J0VxR2pX8dL3k3rfL850f89XfJuas+j81lQjD2P6B/+w4g9hZIVOVvrfP4uYs/WrqM/9p2zWTB/trr6Z9+hf8B6+wMF1mPd
+  </data>
+ </layer>
+ <layer name="VillageBuildingsAccessories" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt0UEKgDAMAMEQ39zq31tQPIjYB7QIM7DnhCQCAAAAAAAAgJlaRvRcvcV/nffttrkza37bhw7/BABgsZJvAAAA8LgAvuQIow==
+  </data>
+ </layer>
+ <layer name="CastleWalls" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer name="Castle" width="80" height="45">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+</map>
